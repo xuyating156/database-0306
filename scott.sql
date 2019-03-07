@@ -117,9 +117,7 @@ CREATE TABLE `salgrade` (
   DEFAULT CHARSET = utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
---
 -- Dumping data for table `salgrade`
---
 
 LOCK TABLES `salgrade` WRITE;
 /*!40000 ALTER TABLE `salgrade`
