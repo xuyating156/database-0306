@@ -66,5 +66,3 @@ select  *
 from scott.emp
 where ENAME like 'A';
 # 25. 计算出员工被雇佣了多少年、多少月、多少日
-
-
