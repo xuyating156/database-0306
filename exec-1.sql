@@ -45,10 +45,7 @@ select  *
 from scott.emp
 where ENAME not like 'R';
 # 14. 找出员工名字的前3个字符
-
 # 15. 将名字中 A 改为 a
-
-
 # 16. 将员工的雇佣日期拖后 10 年
 
 # 17. 返回员工的详细信息并按姓名排序
