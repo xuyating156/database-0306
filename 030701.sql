@@ -15,7 +15,7 @@ create table db_school.student
   major  char(2) comment '性别',
   career varchar(20) comment '专业',
 
-departmrntID int comment '院系ID'
+departmentID int comment '院系ID'
 
 ) comment '学生表';
 
