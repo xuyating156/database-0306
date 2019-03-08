@@ -53,3 +53,4 @@ select *
 from scott.emp
 order by comm ;-- 排序null为最小值
 
+--
