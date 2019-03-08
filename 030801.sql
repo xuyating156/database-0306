@@ -111,5 +111,46 @@ where ename ='7499';-- 修改奖金为null 设置为mull
 select  ename ,sal+ifnull (comm,0) -- 第一个数为空，取第二个数，若第二个数为空 取第一个数，
 from  scott.emp;
 
+select *
+from scott.dept;
 
+select e.*,d.*
+from scott.emp e
+inner join scott.dept d;-- 52=13*4  联合查询
+
+select e.*,d.*
+from scott.emp e
+       inner join scott.dept d
+on e.DEPTNO = d.DEPTNO;
+
+select e.ename ,e.DEPTNO,d.dname ,d.DEPTNO
+from scott.emp e
+       inner join scott.dept d              -- 两个表联合查询的条见
+                  on e.DEPTNO = d.DEPTNO;-- 内联查询
+
+select e.JOB,e.DEPTNO,d.DNAME,d.DEPTNO
+from  scott.emp e
+inner join scott.dept d
+           on e.DEPTNO = d.DEPTNO;
+
+
+select e.ENAME,d.DNAME
+from scott.emp e
+  left outer join scott.dept d -- 左外连接 左表落选区间
+on e.DEPTNO = d.DEPTNO
+
+union --  全外链接，把两个表落选的全部显示出来
+
+select e.ENAME,d.DNAME
+from scott.emp e
+       right outer join scott.dept d -- 右外连接 右表落选区间 相对于三个关键字的左右
+                       on e.DEPTNO = d.DEPTNO;
+
+
+
+select e.ENAME,e.DEPTNO,d.DNAME,d.DEPTNO
+from  scott.emp e
+        inner join scott.dept d
+   #                on e.DEPTNO = d.DEPTNO;
+   using (depton);-- 仅限于主键和外键名字相同
 

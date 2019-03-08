@@ -67,8 +67,9 @@ select replace(ename ,'A','a')
 from scott.emp;
 
 # 16. 将员工的雇佣日期拖后 10 年
-select year(HIREDATE)+10
-from scott.emp;
+
+
+
 # 17. 返回员工的详细信息并按姓名排序
 select *
 from scott.emp
@@ -102,3 +103,4 @@ select  *
 from scott.emp
 where ENAME like 'A';
 # 25. 计算出员工被雇佣了多少年、多少月、多少日
+
