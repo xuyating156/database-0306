@@ -53,4 +53,9 @@ select *
 from scott.emp
 order by comm ;-- 排序null为最小值
 
---
+select  *
+from scott.emp
+limit 3 offset 0;-- 限制   偏移量  查询从0条开始后三条
+-- limit 0,3; 简写 0-3  不建议使用  limit 一般位于 order by 之后
+
+
