@@ -52,8 +52,8 @@ insert  into db_a.activity value (null,'动物园游');
 delete from db_a.activity  where id =1;
 
 update db_a.activity
-set title =''
-where id=1;
+           set title =''
+           where id=1;
 
  select *
 from db_a.activity;
