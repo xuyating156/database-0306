@@ -117,7 +117,9 @@ CREATE TABLE `salgrade` (
   DEFAULT CHARSET = utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
+--
 -- Dumping data for table `salgrade`
+--
 
 LOCK TABLES `salgrade` WRITE;
 /*!40000 ALTER TABLE `salgrade`
@@ -137,4 +139,14 @@ UNLOCK TABLES;
 /*!40111 SET SQL_NOTES = @OLD_SQL_NOTES */;
 
 -- Dump completed on 2016-07-20 11:10:57
---
+
+
+show tables from scott;
+
+desc scott.emp;
+select *
+from scott.emp;
+desc scott.dept;
+select *
+from scott.dept;
+desc scott.salgrade;

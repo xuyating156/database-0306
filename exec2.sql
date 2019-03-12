@@ -29,7 +29,9 @@ from scott.emp e
                   on e.DEPTNO = d.DEPTNO
 where JOB='clerk';
 # 7. 返回部门号及其本部门的最低工资
-
+select  EMPNO ,max(SAL)
+from scott.emp
+group by EMPNO;
 
 # 8. 返回销售部 sales 所有员工的姓名
 select e.ename
@@ -52,10 +54,23 @@ where JOB=(
   where ENAME='sco_tt'
   );
 # 11. 返回比 30 部门员工平均工资高的员工姓名与工资
-
+select ename ,SAL
+from scott.emp
+where SAL>(
+  select avg(SAL)
+  from emp
+  where DEPTNO='30'
+  );
 # 12. 返回工资高于30部门所有员工工资水平的员工信息
+select ename ,SAL
+from scott.emp
+where SAL>(
+  select min(SAL)
+  from emp
+  where DEPTNO='30'
+);
 # 13. 返回部门号、部门名、部门所在位置及其每个部门的员工总数
-
+select DEPTNO,DNAME,LOC,sum(e)
 # 14. 返回员工的姓名、所在部门名及其工资
 select e.SAL,e.ENAME,d.DNAME
 from  scott.emp e
@@ -69,7 +84,12 @@ from  scott.emp e
         inner join scott.dept d
                    on e.DEPTNO = d.DEPTNO;
 # 17. 返回员工工作及其从事此工作的最低工资
-
+select  JOB ,min(sal )
+from scott.emp
+group by JOB;
 # 18. 返回不同部门经理的最低工资
+
 # 19. 计算出员工的年薪，并且以年薪排序
+
+
 # 20. 返回工资处于第 4 级别的员工的姓名
