@@ -1344,7 +1344,7 @@
     </column>
     <column id="343" parent="240" name="categoryID">
       <Position>3</Position>
-      <Comment>parent category id pk </Comment>
+      <Comment>parent category id pk</Comment>
       <DataType>int(11)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
@@ -1693,7 +1693,7 @@
     </key>
     <column id="401" parent="249" name="id">
       <Position>1</Position>
-      <Comment> libraryID </Comment>
+      <Comment> libraryID</Comment>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>1</SequenceIdentity>
